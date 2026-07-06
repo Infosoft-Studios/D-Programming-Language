@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Register .dpp extension
+[HKEY_CLASSES_ROOT\.dppt]
+@="DPPFile"
+
+; File type description
+[HKEY_CLASSES_ROOT\DPPFile]
+@="D++ Reference Test file"
+
+; Optional: default editor (change path if needed)
+[HKEY_CLASSES_ROOT\DPPFile\shell\open\command]
+@="\"C:\\Program Files\\Infosoft\\DPP_Editor.exe\" \"%1\""
