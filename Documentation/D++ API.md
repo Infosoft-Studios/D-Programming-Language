@@ -1,4 +1,4 @@
-Section 8: D++ API (for C++ Code)
+D++ API (for C++ Code)
 =================================
 
 8.1 Overview
@@ -91,3 +91,21 @@ This section is aimed at developers who:
 With the D++ API (for C++ Code), you can treat D++ as a **system core** and C++ as your
 **integration and orchestration layer**, creating powerful hybrid solutions with full access
 to D++ capabilities.
+
+8.8 Sample codes
+---------------------
+
+Bootloader
+```cpp
+#include <dppwin.h> // for windows
+// #include <dppmac.h> for mac
+#include <iostream>
+
+void bootload()
+{
+    fn::load()-> prv
+    {
+        kernel::loadinit: -> public(end*line)
+    }
+}
+```
