@@ -247,7 +247,7 @@ KernelFault::PrivilegeViolation
 - D++ AAPI(Advanced API)
 
 ### Current version:
-Version 1.1.0
+Version 1.1.1
 
 ---
 
