@@ -1,0 +1,179 @@
+{
+  "package.json": {
+    "name": "dpp-language",
+    "displayName": "D++ Language",
+    "description": "Full D++ language support: syntax highlighting, snippets, and basic structure.",
+    "version": "0.0.1",
+    "publisher": "Infosoft SA Program",
+    "engines": {
+      "vscode": "^1.80.0"
+    },
+    "categories": [
+      "Programming Languages"
+    ],
+    "contributes": {
+      "languages": [
+        {
+          "id": "dpp",
+          "aliases": ["D++", "dpp"],
+          "extensions": [".dpp"],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "dpp",
+          "scopeName": "source.dpp",
+          "path": "./syntaxes/dpp.tmLanguage.json"
+        }
+      ],
+      "snippets": [
+        {
+          "language": "dpp",
+          "path": "./snippets/dpp.json"
+        }
+      ]
+    }
+  },
+
+  "language-configuration.json": {
+    "comments": {
+      "lineComment": "//",
+      "blockComment": ["/*", "*/"]
+    },
+    "brackets": [
+      ["{", "}"],
+      ["[", "]"],
+      ["(", ")"]
+    ],
+    "autoClosingPairs": [
+      { "open": "{", "close": "}" },
+      { "open": "[", "close": "]" },
+      { "open": "(", "close": ")" },
+      { "open": "\"", "close": "\"" }
+    ],
+    "surroundingPairs": [
+      ["{", "}"],
+      ["[", "]"],
+      ["(", ")"],
+      ["\"", "\""]
+    ]
+  },
+
+  "syntaxes/dpp.tmLanguage.json": {
+    "scopeName": "source.dpp",
+    "name": "D++",
+    "patterns": [
+      {
+        "match": "\\bfn::\\b",
+        "name": "keyword.control.dpp"
+      },
+      {
+        "match": "\\b(kernel|protected|user|boot|hypervisor)\\b",
+        "name": "storage.modifier.dpp"
+      },
+      {
+        "match": "\\b(oke::|dasm::)\\b",
+        "name": "support.namespace.dpp"
+      },
+      {
+        "match": "\\b(class|module|import|export|struct|enum|iface)\\b",
+        "name": "keyword.dpp"
+      },
+      {
+        "match": "\\b(true|false|null)\\b",
+        "name": "constant.language.dpp"
+      },
+      {
+        "match": "\".*?\"",
+        "name": "string.quoted.double.dpp"
+      },
+      {
+        "match": "\\b[0-9]+\\b",
+        "name": "constant.numeric.dpp"
+      },
+      {
+        "begin": "//",
+        "end": "$",
+        "name": "comment.line.double-slash.dpp"
+      },
+      {
+        "begin": "/\\*",
+        "end": "\\*/",
+        "name": "comment.block.dpp"
+      },
+      {
+        "begin": "dasm::\\{",
+        "end": "\\}",
+        "name": "meta.asm.block.dpp",
+        "patterns": [
+          {
+            "match": "\\b(mov|jmp|int|syscall|halt|push|pop|cmp|add|sub|mul|div|xor|and|or|not)\\b",
+            "name": "keyword.asm.dpp"
+          }
+        ]
+      }
+    ]
+  },
+
+  "snippets/dpp.json": {
+    "D++ Kernel Function": {
+      "prefix": "fnk",
+      "body": [
+        "fn::${1:name} -> kernel {",
+        "    ${2:// kernel code}",
+        "}"
+      ],
+      "description": "D++ kernel function template"
+    },
+    "D++ User Function": {
+      "prefix": "fnu",
+      "body": [
+        "fn::${1:name} -> user {",
+        "    ${2:// user code}",
+        "}"
+      ],
+      "description": "D++ user function template"
+    },
+    "D++ Protected Function": {
+      "prefix": "fnp",
+      "body": [
+        "fn::${1:name} -> protected {",
+        "    ${2:// protected code}",
+        "}"
+      ],
+      "description": "D++ protected function template"
+    },
+    "D++ Class": {
+      "prefix": "class",
+      "body": [
+        "class ${1:Name} {",
+        "    ${2:// fields}",
+        "",
+        "    fn::${3:init} -> user {",
+        "        ${4:// constructor code}",
+        "    }",
+        "}"
+      ],
+      "description": "D++ class template"
+    },
+    "D++ Module": {
+      "prefix": "module",
+      "body": [
+        "module ${1:modname} {",
+        "    ${2:// module code}",
+        "}"
+      ],
+      "description": "D++ module template"
+    },
+    "D++ ASM Block": {
+      "prefix": "asm",
+      "body": [
+        "dasm::{",
+        "    ${1:mov AX, BX}",
+        "}"
+      ],
+      "description": "D++ assembly block"
+    }
+  }
+}
