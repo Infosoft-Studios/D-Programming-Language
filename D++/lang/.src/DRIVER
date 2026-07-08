@@ -1,0 +1,10 @@
+[2026-07-08 14:09:22] LogDriver: Initialization started.
+[2026-07-08 14:09:22] LogDriver: DriverEntry called.
+[2026-07-08 14:09:22] LogDriver: RegistryPath = \Registry\Machine\System\CurrentControlSet\Services\LogDriver
+[2026-07-08 14:09:22] LogDriver: Device object created successfully.
+[2026-07-08 14:09:22] LogDriver: IRP_MJ_CREATE handler invoked.
+[2026-07-08 14:09:23] LogDriver: IRP_MJ_READ request received (Length=512 bytes).
+[2026-07-08 14:09:23] LogDriver: IRP_MJ_WRITE request received (Length=512 bytes).
+[2026-07-08 14:09:24] LogDriver: IRP_MJ_CLOSE handler invoked.
+[2026-07-08 14:09:25] LogDriver: Unload routine called.
+[2026-07-08 14:09:25] LogDriver: Driver unloaded successfully.
