@@ -1,0 +1,17 @@
+amd_x86_64{
+    mode: append;
+    load: true;
+    arch: x86_64;
+    requ: AMD Ryzen 7 5000 series + AMD Radeon graphics;
+}
+
+intel_x86_64{
+    proc:  Intel i3 * any suffix/model
+    prog:  Intel Arc or 1050TI
+    mode:  append
+}
+
+nividia_gpu{
+    prog_req: 1050 TI or Double 5070 TI 
+    proc_rnn: 3-rnn
+}
