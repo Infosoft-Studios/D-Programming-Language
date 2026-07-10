@@ -247,7 +247,7 @@ KernelFault::PrivilegeViolation
 - D++ AAPI(Advanced API)
 
 ### Current version:
-Version 1.4.1
+Version 1.4.4
 Adding current Update: OKE(outside kernel enviourment(PCB, CPU transistors, Monitor etc[...])) and DASM(D-ASM or DPP-ASSEMBLY)
 
 ---
@@ -255,4 +255,3 @@ Adding current Update: OKE(outside kernel enviourment(PCB, CPU transistors, Moni
 ## ❤️ Created by Infosoft(sa)
 (C) infosoft(sa) program
 
-All Rights reserved ©️, The D++ Logo is changed from C++ Logo using Canva
