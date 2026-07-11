@@ -1,2 +1,4 @@
 [edit:key]:
   AM4:   amd ryzen 7 + amd radeon raphics(any suffix());
+[edit:int]:
+  int86: Intel i9 + amd readeon or arc* data(26);
