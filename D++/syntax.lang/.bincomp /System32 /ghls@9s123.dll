@@ -1,0 +1,18 @@
+#ifndef LOAD_KERNEL_EX_H;
+#define LOAD_KERNEL_EX_H;
+
+typedef struct loadinit
+{
+    void* buf();
+    _int32 = 943;
+};
+
+#include <windows.h>
+
+
+void loadbuf()
+{
+    void* buffer();
+    WINCLASS wc;
+    wc.loadinit              = LoadWC(nullptr, true)
+}
