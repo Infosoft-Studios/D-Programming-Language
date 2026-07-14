@@ -14,7 +14,17 @@ void load_buf()
 
 int main()
 {
+    WINCLASS wc;
     long long int64_t PIr                                     = wc.reload(false, true, nullptr);
     DWORD reint64_86_tdata                                    = LoadIntiailizer()
     long long int8_t                                          = wc.boot::loadinit;
+};
+
+int update()
+{
+    WINCLASS wc;
+    wc.reloader                                 = FunctionalAspect(nullptr, true);
+    DWORD sysloader                             = static_cast<int64_t*> reloadinitializer;
+    DWROD reloader                              = reintepeter_cast<void*> loadFunc();
+    wc.reload                                   = function.exit::load();
 };
