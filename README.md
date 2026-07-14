@@ -238,6 +238,11 @@ KernelFault::PrivilegeViolation
 
 ---
 
+## Addional information
+> Please know if you are going to **Install this language on GitHub**, then just know that this is a fresh package from the original Creator infosoft studios* corporation. Which can contain the frsh bugs, which are required for some functional aspect of the language 
+
+> ❌ **DO NOT EDIT OUR FILES**. Some filea are so important that only you add or edit anything, the program will crash, so just if you want to crash the PC + kernel get distroyed(via Win32IN32RUSTCPP API), then it is not an good idea
+
 ## 🗺️ Roadmap (D++ 1.1+)
 
 - Async protected blocks  
