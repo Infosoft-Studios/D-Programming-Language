@@ -255,8 +255,8 @@ KernelFault::PrivilegeViolation
 - D++ AAPI(Advanced API)
 
 ### Current version:
-Version 2.1.2
-Adding current Update: OKE(outside kernel enviourment(PCB, CPU transistors, Monitor etc[...])) and DASM(D-ASM or DPP-ASSEMBLY) and more(etc);
+Version 2.5.3
+Xenogenesis era 
 
 ---
 
